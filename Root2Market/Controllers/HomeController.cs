@@ -26,5 +26,10 @@ namespace Root2Market.Controllers
 
             return View();
         }
+
+        public ActionResult carousel()
+        {
+            return View();
+        }
     }
 }
