@@ -21,17 +21,20 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>
-                        <a href="#">Customers</a>
-                        <ul>
-                            <li>@Html.ActionLink("About", "About", "Home")</li>
-                            <li>@Html.ActionLink("Products", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Products", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">News <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Technologies</a></li>
+                            <li><a href="#">Article</a></li>
+                            <li><a href="#">blog</a></li>
+
+                        </ul>
+
+                    </li>
                 </ul>
             </div>
         </div>
@@ -47,27 +50,14 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-    <script>
-        $(function () {
-    $("body nav li").each(function () {
-        if ($(this).find("ul").length > 0) {
+    <script type="text/javascript">
 
-            //show subnav on hover  
-            $(this).mouseenter(function () {
-                $(this).find("ul").stop(true, true).slideDown();
-            });
+        $(document).ready(function () {
 
-            //hide submenus on exit  
-            $(this).mouseleave(function () {
-                $(this).find("ul").stop(true, true).slideUp();
-            });
+            $('.dropdown-toggle').dropdown();
 
-            $(this).find("ul").mousemove(function () {
-                $(this).stop(true, true).show();
-            });
-        }
-    });
-});
+        });
+
     </script>
 </body>
 </html>

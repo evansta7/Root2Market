@@ -6,20 +6,17 @@
 .navbar-inverse{
     background-color : #0F3DB5;
 }
-
-body nav ul ul {
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+#nav ul {
     display: none;
-    position: absolute;
-    width: 100%;
-    background: #5C87B2;
-    border-top: 5px solid #5C87B2;
-    filter: alpha(opacity=80);
-    opacity: 0.8;
+    list-style-type: none;
 }
 
-    body nav ul ul li a {
-        line-height: 3.1em;
-    }
+#nav li:hover > ul {
+    display: block;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
