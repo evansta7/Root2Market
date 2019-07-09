@@ -6,6 +6,20 @@
 .navbar-inverse{
     background-color : #0F3DB5;
 }
+
+body nav ul ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #5C87B2;
+    border-top: 5px solid #5C87B2;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+    body nav ul ul li a {
+        line-height: 3.1em;
+    }
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
