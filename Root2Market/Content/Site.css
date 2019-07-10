@@ -36,3 +36,24 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#imageCarousel{
+    width: 1200px;
+}
+
+#img1{
+    width: 1200px;
+}
+
+#img2 {
+    width: 1200px;
+}
+
+#img3 {
+    width: 1200px;
+}
+
+#slideshow {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
