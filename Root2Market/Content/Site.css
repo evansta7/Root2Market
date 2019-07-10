@@ -6,6 +6,17 @@
 .navbar-inverse{
     background-color : #0F3DB5;
 }
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+#nav ul {
+    display: none;
+    list-style-type: none;
+}
+
+#nav li:hover > ul {
+    display: block;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
